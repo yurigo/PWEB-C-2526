@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 03 - JavaScript Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="../../index.html">← Back to Portfolio</a>
+    </nav>
+
+    <header>
+        <h1>Session 03: JavaScript Fundamentals</h1>
+        <p class="session-date">Learning Date: Week 3</p>
+    </header>
+
+    <main class="container">
+        <section class="session-info">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>JavaScript variables (let, const, var)</li>
+                <li>Functions and arrow functions</li>
+                <li>DOM manipulation and selection</li>
+                <li>Event handling and listeners</li>
+                <li>Arrays and objects</li>
+                <li>Control structures (if/else, loops)</li>
+            </ul>
+        </section>
+
+        <section class="exercises">
+            <h2>Interactive Exercises</h2>
+            
+            <div class="exercise">
+                <h3>Exercise 1: DOM Manipulation</h3>
+                <p>Dynamically changing content and styles with JavaScript.</p>
+                <div class="demo-container">
+                    <div id="dom-demo" class="interactive-box">
+                        <p id="demo-text">Click the buttons to see DOM manipulation in action!</p>
+                        <div class="button-group">
+                            <button id="change-text">Change Text</button>
+                            <button id="change-color">Change Color</button>
+                            <button id="add-element">Add Element</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 2: Event Handling</h3>
+                <p>Responding to user interactions with event listeners.</p>
+                <div class="demo-container">
+                    <div class="event-demo">
+                        <div id="hover-box" class="hover-target">Hover over me!</div>
+                        <div id="click-counter" class="click-target">
+                            <p>Click Counter: <span id="count">0</span></p>
+                            <button id="increment">+1</button>
+                            <button id="decrement">-1</button>
+                            <button id="reset">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 3: Arrays and Objects</h3>
+                <p>Working with data structures in JavaScript.</p>
+                <div class="demo-container">
+                    <div class="data-demo">
+                        <div class="array-section">
+                            <h4>Array Operations</h4>
+                            <div id="array-display">[]</div>
+                            <div class="button-group">
+                                <button id="add-item">Add Item</button>
+                                <button id="remove-item">Remove Item</button>
+                                <button id="sort-array">Sort Array</button>
+                            </div>
+                        </div>
+                        <div class="object-section">
+                            <h4>Student Object</h4>
+                            <div id="object-display"></div>
+                            <div class="button-group">
+                                <button id="show-object">Show Object</button>
+                                <button id="update-grade">Update Grade</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 4: Simple Calculator</h3>
+                <p>A functional calculator demonstrating functions and control structures.</p>
+                <div class="demo-container">
+                    <div class="calculator">
+                        <div id="calculator-display">0</div>
+                        <div class="calculator-buttons">
+                            <button class="calc-btn clear">C</button>
+                            <button class="calc-btn operator">÷</button>
+                            <button class="calc-btn operator">×</button>
+                            <button class="calc-btn operator">-</button>
+                            
+                            <button class="calc-btn number">7</button>
+                            <button class="calc-btn number">8</button>
+                            <button class="calc-btn number">9</button>
+                            <button class="calc-btn operator">+</button>
+                            
+                            <button class="calc-btn number">4</button>
+                            <button class="calc-btn number">5</button>
+                            <button class="calc-btn number">6</button>
+                            <button class="calc-btn equals" rowspan="2">=</button>
+                            
+                            <button class="calc-btn number">1</button>
+                            <button class="calc-btn number">2</button>
+                            <button class="calc-btn number">3</button>
+                            
+                            <button class="calc-btn number zero">0</button>
+                            <button class="calc-btn number">.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="key-concepts">
+            <h2>Key Concepts Mastered</h2>
+            <div class="concepts-grid">
+                <div class="concept-card">
+                    <h3>Variables & Functions</h3>
+                    <p>Declaring variables with let/const and creating reusable functions.</p>
+                </div>
+                <div class="concept-card">
+                    <h3>DOM Manipulation</h3>
+                    <p>Selecting elements and dynamically updating webpage content.</p>
+                </div>
+                <div class="concept-card">
+                    <h3>Event Handling</h3>
+                    <p>Responding to user interactions like clicks, hovers, and keyboard input.</p>
+                </div>
+                <div class="concept-card">
+                    <h3>Data Structures</h3>
+                    <p>Working with arrays and objects to organize and manipulate data.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="session-nav">
+            <a href="../session-02/index.html" class="nav-btn">← Previous Session</a>
+            <a href="../../index.html" class="nav-btn">Portfolio Home</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
