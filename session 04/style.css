@@ -1,0 +1,40 @@
+/* * {
+    background-color: aqua;
+} */
+
+body{
+    font-family: Montserrat, "Comic Sans MS";
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h1 {
+    color: red;
+    background-color: blue;
+}
+
+h2 {
+    color: yellowgreen;
+    background-color: gray;
+}
+
+.highlighted{
+    border: 5px dashed black;
+    background-color: #AACCFF;
+    color: #333333;
+}
+
+#first-section{
+    background-color: rgb(122, 18, 197);
+    color: white;
+}
+
+[title]{
+   font-size: 30px; 
+}
+
+[title=adios]{
+   font-size: 3px; 
+}
+

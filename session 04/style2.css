@@ -1,0 +1,43 @@
+
+
+h1, h2{
+    font-size: 40px;
+}
+
+#first-section h2{
+    background-color: red;
+}
+
+#first-section > h2{
+    background-color: yellowgreen;
+}
+
+
+h2 ~ p {
+    background-color: green;
+    color: white;
+}
+h2 + p {
+    background-color: blueviolet;
+    color: white;
+}
+
+p::first-letter{
+    color: orange;
+    font-size: 90px;
+}
+
+p::before{
+    content: "before";
+}
+
+p::after{
+    content: "after";
+}
+
+p:hover{
+    border:10px solid salmon;
+}
+
+
+
