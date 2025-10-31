@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esto es para PWEB-C-2526</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+        document.addEventListener("click", () => {
+            document.getElementById("sound").play();
+        })
+    </script>
 </head>
 <body>
     <header>
@@ -23,7 +27,10 @@
         </nav>
     </main>
     <footer>
-        Para vosotros jugadores.
+        <!-- Para vosotros jugadores. -->
+        <audio id="sound" autoplay controls>
+            <source src="./backsound.mp3" type="">
+        </audio>
     </footer>
 </body>
 </html>
