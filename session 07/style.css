@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: monospace;
+    background-color: pink;
+
+    display:grid;
+    height: 100vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 1fr 60px;
+
+    grid-template-areas:
+    "a a a a"
+    "b b b c"
+    "d d d d"
+}
+
+header{
+    grid-area: a;
+    background-color: greenyellow;
+}
+
+main{
+    grid-area: b
+}
+
+footer{
+    grid-area: d;
+    background-color: paleturquoise;
+}
+
+aside{
+    grid-area: c;
+    background-color: palevioletred;
+}
+
+/* header, footer{
+    grid-column: 1 / -1;
+} */
+
+header, footer, aside, main{
+    padding: 1em;
+}
+
+section{
+    border: 3px dashed palevioletred;
+    max-width: 700px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: 100px 200px 300px; */
+    grid-auto-rows: 100px;
+
+    gap: 10px;
+
+    /* justify-items: stretch; */
+    /* justify-content: center; */
+    /* align-items: stretch; */
+
+}
+
+section > div {
+    padding: 1em;
+    border: 1px solid white;
+    background-color: blueviolet;
+}
+
+section > div.especialito{
+    background-color: red;
+    /* grid-column-start: 2; */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-column-end: span 3; */
+
+
+    /* grid-column: 1 / span 3;
+    grid-row: 1 / span 3; */
+
+    grid-area: 1 / 1 / span 3 / span 2;
+
+    /* align-self: end; */
+}
+
+/*tablet*/
+@media (width < 769px){
+    body{
+        background-color: red;
+        grid-template-areas: 
+        "a a a a"
+        "c b b b"
+        "c b b b"
+        "d d d d"
+        ;
+    }
+        main > section{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    section > div.especialito{
+        background-color: yellow;
+        grid-column-start: -1;
+        grid-column-end: -3;
+        grid-row-start: -1;
+        grid-row-end: -3;
+    }
+}
+@media (width < 400px){
+    body{
+        background-color: red;
+        grid-template-areas: 
+        "a a a a"
+        "b b b b"
+        "b b b b"
+        "c c c c"
+        "d d d d"
+        ;
+    }
+
+    main > section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
