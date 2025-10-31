@@ -1,0 +1,93 @@
+@property --background-hue{
+    syntax: '<number>';
+    initial-value: 0;
+    inherits: false;
+}
+
+/* :root{
+    --background-hue: 0;
+} */
+
+@keyframes rainbow {
+  0% {--background-hue: 0}
+  100% {--background-hue: 360}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 5em;
+}
+
+body {
+    font-family: monospace;
+    background-color: hsl(var(--background-hue), 65%, 26%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: rainbow 10s linear infinite;
+}
+
+header{
+    padding: 1em 2em;
+}
+
+nav{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    row-gap: 3em;
+    justify-items: center;
+}
+
+@media (width > 400px){
+    nav{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (width > 500px){
+    nav{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+a {
+    font-size: 1.3em;
+    color: white;
+    display: block;
+    padding: 1em 2em;
+    border: 3px solid white;
+    box-shadow: 10px 10px 0 0px black;
+    transition: transform 100ms linear;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+a:hover{
+    outline: 2px solid yellowgreen;
+    outline-offset: 2px;
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 15px 15px 0 0px black;
+}
+
+a:active{
+    outline: 4px solid red;
+    transform: translateX(2px) translateY(2px);
+    box-shadow: 8px 8px 0 0px black;
+}
+
+footer{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(0,0,0,0.1)
+}
